@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    width: 100%;
+}
+
+nav > img {
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+
+    animation-name: nav;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+nav > a {
+    color: rgba(97, 97, 97, 0.801);
+    text-decoration: none;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+
+    animation-name: nav;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+nav a:hover {
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.contato {
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 1200px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+
+    animation-name: contato;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+ @keyframes contato {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30%);
+    }
+}
+
+.texto {
+    width: 800px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+.texto h1 {
+    font-family: 'Cinzel Decorative';
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.texto p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.email {
+    width: 800px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+.email input, label {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.email input {
+    width: 310px;
+    height: 40px;
+    border-color: rgba(240, 248, 255, 0);
+    font-family: 'Cinzel Decorative';
+}
+
+#confirmar {
+    cursor: pointer;
+    background-color: rgba(40, 153, 40, 0.548);
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+#confirmar:hover {
+    background-color: rgba(40, 153, 40, 0.774);
+    color: white;
+    box-shadow: 3px 3px 7px 7px rgba(0, 0, 0, 0.342);
+}
+
+.email label {
+    font-family: 'Cinzel Decorative';
+}
+
+.ou {
+    padding-top: 35px;
+}
+
+.contact {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.wpp {
+    display: inline;
+}
+
+.wpp button {
+    width: 250px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Cinzel Decorative';
+    font-size: 20px;
+
+    border-radius: 50px;
+    border-color: rgba(255, 255, 255, 0.411);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(192, 192, 192, 0.603);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.699);
+    box-shadow: 3px 3px 9px 4px rgba(0, 0, 0, 0.418);
+}
+
+.wpp p {
+    display: inline-block;
+    height: 60px;
+}
+
+.wpp img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.insta {
+    display: inline;
+}
+
+.insta button {
+    width: 250px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Cinzel Decorative';
+    font-size: 20px;
+
+    border-radius: 50px;
+    border-color: rgba(255, 255, 255, 0.411);
+    cursor: pointer;
+}
+
+.insta p {
+    display: inline-block;
+    height: 60px;
+}
+
+.insta img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+body {
+    background-image: url(../img/homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation-name: background;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes background {
+    0% {
+        background-position-y: 0%;
+    }
+    100% {
+        background-position-y: 50%;
+    }
+}
